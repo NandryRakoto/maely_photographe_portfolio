@@ -1517,19 +1517,19 @@ document.getElementById('filters').addEventListener('click',e=>{
 });
 
 /* ── STORY MODAL ─────────────────────────────────────────────── */
-function openStory(id){
-  const p=PD.find(x=>x.id===id);if(!p)return;
-  document.getElementById('sCat').textContent=p.cat.toUpperCase();
-  document.getElementById('sTitle').textContent=p.title;
-  document.getElementById('sLieu').textContent='📍 '+p.story.lieu;
-  document.getElementById('sDate').textContent='📅 '+p.story.date;
-  document.getElementById('sText').textContent=p.story.text;
-  document.getElementById('sModal').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeStory(){document.getElementById('sModal').classList.remove('open');document.body.style.overflow='';}
-document.getElementById('sClose').addEventListener('click',closeStory);
-document.getElementById('sModal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeStory()});
+// function openStory(id){
+//   const p=PD.find(x=>x.id===id);if(!p)return;
+//   document.getElementById('sCat').textContent=p.cat.toUpperCase();
+//   document.getElementById('sTitle').textContent=p.title;
+//   document.getElementById('sLieu').textContent='📍 '+p.story.lieu;
+//   document.getElementById('sDate').textContent='📅 '+p.story.date;
+//   document.getElementById('sText').textContent=p.story.text;
+//   document.getElementById('sModal').classList.add('open');
+//   document.body.style.overflow='hidden';
+// }
+// function closeStory(){document.getElementById('sModal').classList.remove('open');document.body.style.overflow='';}
+// document.getElementById('sClose').addEventListener('click',closeStory);
+// document.getElementById('sModal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeStory()});
 
 /* ── HORIZONTAL STRIP ────────────────────────────────────────── */
 const hgData=[
